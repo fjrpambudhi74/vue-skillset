@@ -1,32 +1,67 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <b-navbar type="dark" variant="dark">
+        <b-navbar-nav>
+          <b-nav-item to="/">Home</b-nav-item>
+          <b-nav-item disabled>|</b-nav-item>
+          <b-nav-item to="/about">About</b-nav-item>
+        </b-navbar-nav>
+      </b-navbar>
+      <!-- <router-link to="/">Home</router-link>|
+      <router-link to="/about">About</router-link>-->
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
+<script>
+export default {
+  watch: {
+    $route: {
+      handler: (to, from) => {
+        document.title = to.meta.title;
+      },
+      immediate: true,
+    },
+  },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+
+body {
+  background-color: #eeeeee;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
   text-align: center;
-  color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+body,
+html {
+  margin: 0;
+  height: 100%;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+#app {
+  width: 50%;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.navbar {
+  justify-content: center !important;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: lightgray !important;
+  text-decoration: underline !important;
 }
 </style>

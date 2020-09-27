@@ -1,4 +1,14 @@
-# vue_project_1
+# Vue_Skillset
+
+> Hello! Thanks for checking out the repo for my latest portfolio website. This website isn't just my new portfolio, but also a personal project in and of itself.
+
+## Built with
+* Vue JS
+* Vuex
+* Vue Router
+* HTML
+* CSS
+* Animate CSS
 
 ## Project setup
 ```

@@ -1,8 +1,8 @@
-# Vue_Skillset
+# :fire: Vue_Skillset
 
 > Hello! Thanks for checking out the repo for my latest portfolio website. This website isn't just my new portfolio, but also a personal project in and of itself.
 
-## Built with
+## :rocket: Built with
 * Vue JS
 * Vuex
 * Vue Router
@@ -10,7 +10,7 @@
 * CSS
 * Animate CSS
 
-## Project setup
+## :hammer_and_wrench: Project setup
 ```
 npm install
 ```
@@ -30,5 +30,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ---
 
-## Give Me Feedback
+## :gift: Give Me Feedback
 If you found this project useful, please consider giving it a :star:. If you have any question or feedback, open an issue and i will get to you :blush:
